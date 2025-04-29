@@ -1,0 +1,71 @@
+*{
+    font-family: "Lato";
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.4s ease;
+    overflow: hidden;
+    background: linear-gradient(#C8E0F4 40%, #508AA8);
+}
+img{
+    width: 100px;
+    position: absolute; /* Allows us to position the icon relative to the viewport */
+    top: -100px; /* Start off-screen (above the viewport) */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Exact horizontal centering */
+    opacity: 0; /* Start with no opacity */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
+}
+.container{
+    width: 400px;
+    height: 500px;
+    padding: 10px 20px;
+    color: #F7FFF7;
+    background-color: #002147;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.input-default{
+    width: 250px;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 35px;
+}
+.button-default{
+    width: 100px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
+}
+.toggle-default{
+    width: 100px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@keyframes slideDown {
+    0% {
+        top: -100px; /* Start off-screen above */
+        opacity: 0;
+    }
+    100% {
+        top: 8%; /* Position it in the center vertically */
+        opacity: 1; /* Make it visible */
+    }
+}
+
+  
